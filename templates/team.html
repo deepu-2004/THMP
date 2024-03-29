@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Green Escapes tours-Team{% endblock %}
+{% block touchactive %}active{% endblock %}
+{% block css %} <link href="{% static 'assets/css/team.css' %}" rel="stylesheet"> {% endblock %}
+{% block content %}
+  <main id="main">
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <ol>
+          <li><a href="{% url 'index' %}">Home</a></li>
+          <li>Team</li>
+        </ol>
+        <h2>Team</h2>
+      </div>
+    </section>
+
+    
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="{% static 'assets/img/team/samcd.jpg' %}" alt="team Image" height="500px">
+                        <div class="normal-text">
+                            <h4 class="team-name">SAMEER</h4>
+                            <span class="subtitle">CREATIVE &amp; DIRECTOR</span>
+                        </div>
+                    </div>
+                   
+            <div class="col-lg-4 col-md-6">
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="{% static 'assets/img/team/tej.jpeg' %}" alt="team Image" height="500px">
+                        <div class="normal-text">
+                            <h4 class="team-name">TEJA</h4>
+                            <span class="subtitle">LEGAL ADVISOR</span>
+                        </div>
+                    </div>
+                    <div class="team-content">
+                        <div class="display-table">
+                            <div class="display-table-cell">
+                                <div class="share-icons">
+                                    <div class="border"></div>
+                                    
+
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+</div>
+
+  </main>
+
+  
+  {% endblock %}
